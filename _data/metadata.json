@@ -1,16 +1,16 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Know git, Sherlock!",
+  "url": "https://www.knowgitsherlock.com",
+  "description": "A challenge blog about the uses of git outside of version control. ",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Learn about the uses of git outside of version control with Sherlock Holmes.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "url": "https://myurl.com/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "url": "https://www.knowgitsherlock.com/feed/feed.xml",
+    "id": "https://www.knowgitsherlock.com/"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Adam Giese",
+    "email": "adam.giese@gmail.com"
   }
 }
