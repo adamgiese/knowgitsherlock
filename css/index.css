@@ -16,6 +16,8 @@
   --background-light: var(--beige);
 
   --text-medium: var(--dark-beige);
+
+  --border-medium: var(--dark-beige);
 }
 * {
   box-sizing: border-box;
@@ -53,7 +55,7 @@ main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--light-gray);
+  border-bottom: 1px dashed var(--dark-beige);
 }
 header:after {
   content: "";
