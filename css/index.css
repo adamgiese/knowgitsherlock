@@ -4,6 +4,7 @@
   --navy: #17050F;
   --blue: #082840;
 	--beige: hsl(50deg, 50%, 85%);
+	--dark-beige: hsl(50deg, 50%, 20%);
 
 	--white: hsl(0, 0%, 100%);
 	--light-gray: hsl(0, 0%, 90%);
@@ -13,6 +14,8 @@
 
 	/* color wiring */
 	--background-light: var(--beige);
+
+	--text-medium: var(--dark-beige);
 }
 * {
   box-sizing: border-box;
@@ -37,10 +40,10 @@ p,
 .tmpl-post li {
   line-height: 1.45;
 }
-a[href] {
+a {
   color: var(--blue);
 }
-a[href]:visited {
+a:visited {
   color: var(--navy);
 }
 main {
@@ -123,9 +126,13 @@ pre {
 /* Header */
 .home {
   padding: 0 1rem;
-  float: left;
   margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
+  font-size: 3em; /* 16px /16 */
+  font-family: 'Domine', serif;
+  text-align: center;
+}
+.home a {
+  color: var(--text-medium);
 }
 .home :link:not(:hover) {
   text-decoration: none;
@@ -135,8 +142,8 @@ pre {
 .nav {
   padding: 0;
   list-style: none;
-  float: left;
   margin-left: 1em;
+  text-align: center;
 }
 .nav-item {
   display: inline-block;
