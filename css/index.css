@@ -3,19 +3,19 @@
   --red: #C5004A;
   --navy: #17050F;
   --blue: #082840;
-	--beige: hsl(50deg, 50%, 85%);
-	--dark-beige: hsl(50deg, 50%, 20%);
+  --beige: hsl(50deg, 50%, 85%);
+  --dark-beige: hsl(50deg, 50%, 20%);
 
-	--white: hsl(0, 0%, 100%);
-	--light-gray: hsl(0, 0%, 90%);
-	--gray: hsl(0, 0%, 80%);
-	--dark-gray: hsl(0, 0%, 20%);
-	--black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 90%);
+  --gray: hsl(0, 0%, 80%);
+  --dark-gray: hsl(0, 0%, 20%);
+  --black: hsl(0, 0%, 0%);
 
-	/* color wiring */
-	--background-light: var(--beige);
+  /* color wiring */
+  --background-light: var(--beige);
 
-	--text-medium: var(--dark-beige);
+  --text-medium: var(--dark-beige);
 }
 * {
   box-sizing: border-box;
