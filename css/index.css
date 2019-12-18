@@ -24,7 +24,7 @@
 }
 html,
 body {
-  padding: 0;
+  padding: 1rem;
   margin: 0;
   font-family: sans-serif;
   color: var(--dark-gray);
@@ -128,10 +128,20 @@ pre {
 /* Header */
 .home {
   padding: 0 1rem;
-  margin: 1rem 0; /* 16px /16 */
-  font-size: 3em; /* 16px /16 */
+  margin: 0;
+  font-size: 2.4em;
   font-family: 'Domine', serif;
   text-align: center;
+}
+@media screen and (min-width: 20rem) {
+  .home {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 30rem) {
+  .home {
+    font-size: 4em;
+  }
 }
 .home a {
   color: var(--text-medium);
