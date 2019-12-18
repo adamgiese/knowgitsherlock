@@ -154,19 +154,37 @@ pre {
 .nav {
   padding: 0;
   list-style: none;
-  margin-left: 1em;
   text-align: center;
+	display: flex;
+	flex-direction: column;
 }
+
 .nav-item {
   display: inline-block;
-  margin-right: 1em;
+	font-size: 1.2rem;
+}
+
+.nav-item:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 30rem) {
+	.nav {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.nav-item:not(:last-child) {
+		margin-bottom: 0;
+		margin-right: 2em;
+	}
 }
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
 }
 .nav-item-active {
   font-weight: 700;
-  text-decoration: underline;
 }
 
 /* Posts list */
