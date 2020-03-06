@@ -11,6 +11,7 @@ hints:
   - git grep is the tool that is best suited for this job.
   - Look at the flags available for `git grep` to find the best way to narrow it down.
 hashtag: know-git-find-moriarty
+solution: /posts/find-moriarty-solution
 ---
 
 Professor Moriarty is the archenemy of Sherlock Holmes. Refered to by Holmes as 'the Napoleon of crime' who has 'a brain of the first order', he has become an absolutely iconic villain. Given his stature, you might be surprised the he appears in only a single Holmes story. He is, however, mentioned various times after his first appearance.
