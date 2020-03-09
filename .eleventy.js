@@ -24,6 +24,11 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
+  // Check if an array contains a value
+  eleventyConfig.addNunjucksFilter("includes", function(array, value) {
+    return Boolean(array && array.includes(value))
+  });
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
