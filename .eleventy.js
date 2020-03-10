@@ -29,6 +29,11 @@ module.exports = function(eleventyConfig) {
     return Boolean(array && array.includes(value))
   });
 
+  // Filter to posts with tag
+  eleventyConfig.addNunjucksFilter("withTag", function(posts, tag) {
+    return posts.filter(post => post.data.tags.includes(tag))
+  });
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
