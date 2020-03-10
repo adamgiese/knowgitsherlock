@@ -13,11 +13,23 @@
   --black: hsl(0, 0%, 0%);
 
   /* color wiring */
+  --background-dark: var(--navy);
   --background-light: var(--beige);
 
+  --text-light: var(--white);
   --text-medium: var(--dark-beige);
 
+  --border-light: var(--white);
   --border-medium: var(--dark-beige);
+
+  /* padding definitions */
+  --padding-medium: 1rem;
+
+  /* border definitions */
+  --border-large: 1rem;
+
+  /* font decorations */
+  --weight-bold: 700;
 }
 * {
   box-sizing: border-box;
@@ -266,4 +278,12 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+.challenge-info {
+  border-left: var(--border-large) solid var(--blue);
+
+  padding: var(--padding-medium);
+
+  font-weight: var(--weight-bold);
 }
