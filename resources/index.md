@@ -4,7 +4,7 @@ title: Resources on git
 templateClass: tmpl-post
 eleventyNavigation:
   key: Resources
-  order: 3
+  order: 4
 ---
 
 There are many great resources that you can use to learn more about git.
