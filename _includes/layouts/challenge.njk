@@ -1,0 +1,26 @@
+---
+layout: layouts/post.njk
+templateClass: tmpl-challenge
+---
+{{ content | safe }}
+
+<div class='challenge-info'>
+  <p>
+    This post is a challenge. To participate in a challenge, you must:
+  </p>
+  <ol>
+    <li><a href='https://git-scm.com/book/en/v2/Getting-Started-Installing-Git'>Install git</a></li>
+    <li>Clone the <a href='https://github.com/adamgiese/knowgitsherlock'>Repository</a></li>
+  </ol>
+  {% if hashtag %}
+    <p>
+      Feel free to discuss the challenge <a href='https://twitter.com/search?lang=en&q=%23{{hashtag}}'>on Twitter</a> with the hashtag #{{ hashtag }}
+    </p>
+  {% endif %}
+</div>
+
+{% if solution %}
+  <div class='challenge-solution-block'>
+    <p>A solution has been published and is available <a href='{{solution | url}}'>here</a>.</p>
+  </div>
+{% endif %}

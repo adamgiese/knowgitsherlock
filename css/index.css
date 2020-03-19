@@ -3,6 +3,7 @@
   --red: #C5004A;
   --navy: #17050F;
   --blue: #082840;
+  --green: green;
   --beige: hsl(50deg, 50%, 85%);
   --dark-beige: hsl(50deg, 50%, 20%);
 
@@ -13,6 +14,7 @@
   --black: hsl(0, 0%, 0%);
 
   /* color wiring */
+  --success: var(--green);
   --background-dark: var(--navy);
   --background-light: var(--beige);
 
@@ -27,6 +29,9 @@
 
   /* border definitions */
   --border-large: 1rem;
+
+  /* margin definitions */
+  --margin-medium: 1rem;
 
   /* font decorations */
   --weight-bold: 700;
@@ -281,9 +286,15 @@ a[href].direct-link:focus:visited,
 }
 
 .challenge-info {
+  margin-bottom: var(--margin-medium);
   border-left: var(--border-large) solid var(--blue);
-
   padding: var(--padding-medium);
 
   font-weight: var(--weight-bold);
+}
+
+.challenge-solution-block {
+  margin-bottom: var(--margin-medium);
+  border-left: var(--border-large) solid var(--success);
+  padding: var(--padding-medium);
 }

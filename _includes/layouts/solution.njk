@@ -1,0 +1,13 @@
+---
+layout: layouts/post.njk
+templateClass: tmpl-solution
+---
+
+{% if challenge %}
+  <div class='challenge-solution-block'>
+    <p>
+      This post is a solution to a challenge. You can view the original challenge <a href='{{challenge | url}}'>here</a>.</p>
+  </div>
+{% endif %}
+
+{{ content | safe }}

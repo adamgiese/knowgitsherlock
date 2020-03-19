@@ -1,11 +1,11 @@
 ---
-title: Find Moriarty
+title: Sherlock Holmes and the Search for Moriarty
 description: Use git to find where Moriarty is mentioned in the Sherlock Holmes canon.
 date: 2020-03-01
 tags:
   - search
   - challenge
-layout: layouts/post.njk
+layout: challenge
 commit:
 hints:
   - git grep is the tool that is best suited for this job.

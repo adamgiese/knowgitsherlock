@@ -1,10 +1,10 @@
 ---
-title: Solution to "Find Moriarty"
+title: An introduction to git grep
 tags:
   - search
   - solution
-challenge: posts/find-moriarty
-layout: layouts/post.njk
+challenge: /posts/find-moriarty
+layout: solution
 hashtag: #know-git-find-moriarty
 ---
 
