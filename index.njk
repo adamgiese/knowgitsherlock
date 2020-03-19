@@ -6,6 +6,24 @@ eleventyNavigation:
 ---
 
 {% set challengeList = collections.posts | withTag('challenge') | head(-1) %}
+
+<h2>What is "Know git, Sherlock!"?</h2>
+
+<p>
+  It is a 'challenge blog': a series of challenges (and their solutions) designed to teach about various aspects of git. All of the challenges are "Sherlock Holmes" themed, and there is an emphasis on using git as a <em>debugging</em> tool as well as version control.
+</p>
+
+<h2>Who is it for?</h2>
+
+<p>
+  While I strive to have something for everyone, the real target of "Know git, Sherlock!" is for the user of git that has a surface level understanding - somebody who might be familiar with pushing and pulling commits, viewing their git logs to get a better history of their repository, and may or may not be comfortable with merge conflicts and rebasing.
+</p>
+
+<p>
+  If you are an expert at git, I <em>hope</em> that there is still something for you. If you are an absolute beginner, I am sure that you will learn a lot... the challenges might just take a little bit more time and effort to complete.
+</p>
+
+
 {% for post in challengeList | reverse %}
-  View the most recent challenge <a href="{{ post.url | url }}">here</a> or view all challenges in <a href={{ '/challenges/' | url }}>the archive</a>.
+  <p>View the most recent challenge <a href="{{ post.url | url }}">here</a> or view all challenges in <a href={{ '/challenges/' | url }}>the archive</a>.</p>
 {% endfor %}
