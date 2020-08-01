@@ -59,9 +59,7 @@ Date:   Tue Mar 10 18:47:42 2020 -0500
 
 ```
 
-So, it seems that Watson's changes were purely superficial -- he simply applied some style linting to Mrs. Hudson's recipe. So, who is the _real_ culprit?
-
-There are a few ways that we can take a look at the history past a specific commit. If we were to keep using `git blame`, we have a few options. We can use the the `-w` flag to ignore the whitespace. This flag is the perfect tool for this particular job!
+So, it seems that Watson's changes were purely superficial -- he simply applied some style linting to Mrs. Hudson's recipe. So, who is the _real_ culprit? We can use the the `-w` flag to ignore the whitespace. This flag is the perfect tool for this particular job!
 
 ```bash
 git blame -w recipes/curried-chicken.md
@@ -88,3 +86,10 @@ git blame -w recipes/curried-chicken.md
 ```
 
 It seems that the devious Culverton Smith is behind this plot!
+
+When using `git blame`, it is important to note that the “author” of a line is the one who has edited the line most recently, not necessarily the one who wrote the line.
+
+## Additional Thoughts & Challenges
+
+- In this case, using the `-w` flag to ignore white space changes made finding the update trivial. What if the stylistic changes that Watson made were _not_ white space? How could `git blame` have been used in this case?
+- What tools other than `git blame` could be used to see who added the curare paste?
