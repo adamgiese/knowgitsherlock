@@ -1,0 +1,11 @@
+- Ignoring a file in a project (tracked)
+  - Most common use case
+  - Used for many things, such as:
+    - compiled files
+    - dependencies
+- Ignoring a file in a project (untracked)
+  - I sometimes use this for writing “notes”
+  - Can be useful for writing scripts that need to be run on past commits such as when debugging
+- Ignoring a file in ALL projects
+  - Useful for editor or OS created files
+    - .DS_STORE
